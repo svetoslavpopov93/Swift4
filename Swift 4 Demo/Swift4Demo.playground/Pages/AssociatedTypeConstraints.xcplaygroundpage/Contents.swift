@@ -5,14 +5,14 @@
 //:------------
 
 //: ### In Swift 4
-import Foundation
-
-protocol SequenceABC {
-    
-    associatedtype Iterator : IteratorProtocol
-    associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
-    // ^----- This was not allowed in the previous versions
-}
+//import Foundation
+//
+//protocol MySequence {
+//
+//    associatedtype Iterator : IteratorProtocol
+//    associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
+//                                    // ^----- This was not allowed in the previous versions
+//}
 
 //: ## Change 'filter' to return an associated type [SE-0174]
 //: ### In Swift 3:
@@ -26,28 +26,26 @@ var overpricedDrinks = drinks.filter { (value) -> Bool in
 type(of: overpricedDrinks) // overpricedDrinks is array of tuples
 
 //: ### In Swift 4:
-// The new filter implementation
-
-protocol SequenceABCD {
-    
-    associatedtype Filtered
-    associatedtype Iterator : IteratorProtocol
-    
-    func filter(_ isIncluded: (Iterator.Element) throws -> Bool) rethrows -> Filtered // filter(_:) will now return the associatedtype
-}
-
-// The default filter(_:) implementation of RangeReplaceableCollection
-extension RangeReplaceableCollection {
-    func filter(_ isIncluded: (Iterator.Element) throws -> Bool) rethrows -> Self {
-        var result = Self()
-        for element in self {
-            if try isIncluded(element) {
-                result.append(element)
-            }
-        }
-        return result
-    }
-}
+//// The new filter implementation
+//protocol NewSequence {
+//    associatedtype Filtered
+//    associatedtype Iterator : IteratorProtocol
+//
+//    func filter(_ isIncluded: (Iterator.Element) throws -> Bool) rethrows -> Filtered // filter(_:) will now return the associatedtype
+//}
+//
+//// The default filter(_:) implementation of RangeReplaceableCollection
+//extension RangeReplaceableCollection {
+//    func filter(_ isIncluded: (Iterator.Element) throws -> Bool) rethrows -> Self {
+//        var result = Self()
+//        for element in self {
+//            if try isIncluded(element) {
+//                result.append(element)
+//            }
+//        }
+//        return result
+//    }
+//}
 
 
 //: ## Support recursive constraints on associated types [SE-0157]
