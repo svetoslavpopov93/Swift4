@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Main'/>
+        <page name='AssociatedTypeConstraints'/>
+        <page name='ComposingClassesAndProtocols'/>
+        <page name='DictionaryAndSetEnhancements'/>
+        <page name='GenericSubscripts'/>
+        <page name='SmartKeyPaths'/>
+        <page name='NSNumberBridging'/>
+        <page name='One-sidedRanges'/>
+        <page name='StringsAndMulti-lineStringLiterals'/>
+        <page name='PrivateDeclarationVisibleInSame-fileExtensions'/>
+        <page name='ReduceWithInout'/>
+        <page name='MutableCollection_swapA'/>
+        <page name='EnforceExclusiveAccessToMemory'/>
+        <page name='EncodingAndDecoding'/>
+        <page name='LimitingObjcInference'/>
+        <page name='Protocol-orientedIntegers'/>
+    </pages>
+</playground>
