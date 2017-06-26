@@ -1,8 +1,7 @@
-/*: 
- 
- [Previous](@previous)
- 
-## Reduce with inout
- 
-[Next](@next) */
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Reduce with inout
+//:------------
+
+//: [< Previous](@previous)   [Next >](@next)
 

@@ -1,8 +1,7 @@
-/*: 
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Generic subscripts
+//:------------
  
- [Previous](@previous)
- 
-## Generic subscripts
- 
-[Next](@next) */
+//: [< Previous](@previous)   [Next >](@next)
 

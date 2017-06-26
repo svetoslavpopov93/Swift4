@@ -1,8 +1,6 @@
-/*: 
- 
- [Previous](@previous)
- 
-## Limiting @objc interference
- 
-[Next](@next) */
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Limiting @objc interference
+//:------------
 
+//: [< Previous](@previous)   [Next >](@next)

@@ -1,8 +1,7 @@
-/*: 
- 
- [Previous](@previous)
- 
-## Smart Key Paths
- 
-[Next](@next) */
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Smart Key Paths
+//:------------
+
+//: [< Previous](@previous)   [Next >](@next)
 

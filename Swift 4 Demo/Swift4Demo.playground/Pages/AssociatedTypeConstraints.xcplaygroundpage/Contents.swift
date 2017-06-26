@@ -1,12 +1,8 @@
-/*:
- 
- [Previous](@previous)
-
- # Associated Type Constraints
- */
-
-//:------------
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: # Associated Type Constraints
 //: ## Permit where clauses to constrain associated types [SE-0142]
+//:------------
 
 //: ### In Swift 4
     protocol Sequence {
@@ -70,4 +66,4 @@
     }
 
 
-//: [Next](@next)
+//: [< Previous](@previous)   [Next >](@next)

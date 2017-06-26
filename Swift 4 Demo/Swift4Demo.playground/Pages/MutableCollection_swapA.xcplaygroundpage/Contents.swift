@@ -1,8 +1,6 @@
-/*: 
- 
- [Previous](@previous)
- 
-## Mutable Collection with swapA
- 
-[Next](@next) */
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Mutable Collection with swapA
+//:------------
 
+//: [< Previous](@previous)   [Next >](@next)

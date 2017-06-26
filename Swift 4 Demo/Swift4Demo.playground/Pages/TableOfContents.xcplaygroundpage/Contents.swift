@@ -5,7 +5,7 @@
  
  
  
- ### Agenda
+ ### Table Of Contents
  * [Associated type constraints](AssociatedTypeConstraints)
  * [Composing classes and protocols](ComposingClassesAndProtocols)
  * [Dictionary and Set enhancements](DictionaryAndSetEnhancements)

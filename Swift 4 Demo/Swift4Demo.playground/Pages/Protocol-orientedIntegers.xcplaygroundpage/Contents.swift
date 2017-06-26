@@ -1,8 +1,6 @@
-/*:
- 
- [Previous](@previous)
- 
-## Protocol-oriented Integers
- 
-[Next](@next) */
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Protocol-oriented Integers
+//:------------
 
+//: [< Previous](@previous)   [Next >](@next)

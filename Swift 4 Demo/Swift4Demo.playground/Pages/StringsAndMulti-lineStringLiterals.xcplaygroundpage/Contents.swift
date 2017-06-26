@@ -1,8 +1,7 @@
-/*: 
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## String / Multi-line string literals
+//:------------
  
- [Previous](@previous)
- 
-## String / Multi-line string literals
- 
-[Next](@next) */
+//: [< Previous](@previous)   [Next >](@next)
 

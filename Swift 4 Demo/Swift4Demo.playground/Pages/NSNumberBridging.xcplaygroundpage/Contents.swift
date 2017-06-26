@@ -1,8 +1,6 @@
-/*: 
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## NSNumber bridging
+//:------------
  
- [Previous](@previous)
- 
-## NSNumber bridging
-
-[Next](@next) */
-
+//: [< Previous](@previous)   [Next >](@next)

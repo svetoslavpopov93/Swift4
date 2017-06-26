@@ -1,8 +1,7 @@
-/*: 
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## Dictionary and Set Enchancements
+//:------------
  
- [Previous](@previous)
- 
-## Dictionary and Set Enchancements
- 
-[Next](@next) */
+//: [< Previous](@previous)   [Next >](@next)
 

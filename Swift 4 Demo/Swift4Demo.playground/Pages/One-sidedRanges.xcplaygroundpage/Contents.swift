@@ -1,8 +1,7 @@
-/*: 
+//: [<< Table Of Contents](TableOfContents)
+//:
+//: ## One-sided ranges
+//:------------
  
- [Previous](@previous)
- 
-## One-sided ranges
- 
-[Next](@next) */
+//: [< Previous](@previous)   [Next >](@next)
 
