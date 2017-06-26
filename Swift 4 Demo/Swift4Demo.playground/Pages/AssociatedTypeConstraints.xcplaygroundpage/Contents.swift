@@ -5,15 +5,16 @@
 //:------------
 
 //: ### In Swift 4
-    protocol Sequence {
-        associatedtype Iterator : IteratorProtocol
+import Foundation
+protocol SequenceABC {
+        associatedtype Element
         associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
                                              // ^----- This was not allowed in the previous versions
     }
 
 //: ## Change 'filter' to return an associated type [SE-0174]
 //: ### In Swift 3:
-    import Foundation
+
 
     let drinks = ["Ariana Radler":2.1, "Coca-Cola":1.1, "Cappy":1.5]
     var overpricedDrinks = drinks.filter { (value) -> Bool in
@@ -24,7 +25,7 @@
 
 //: ### In Swift 4:
 // The new filter implementation
-    protocol Sequence {
+    protocol SequenceABCD {
         associatedtype Filtered
         
         func filter(_ isIncluded: (Iterator.Element) throws -> Bool) rethrows -> Filtered // filter(_:) will now return the associatedtype
@@ -53,14 +54,14 @@
     }
 
     // This will not compile
-    protocol Sequence {
+    protocol SequenceABCDE {
         associatedtype SubSequence
     
         func dropFirst(_ n: Int) -> Self.SubSequence
     }
 
-    struct SequenceOfInts : Sequence {
-        func dropFirst(_ n: Int) -> Sequence {
+    struct SequenceOfInts : SequenceABCDE {
+        func dropFirst(_ n: Int) -> SequenceABCDE {
             return A()              // ^------ This is not allowed in the prevoius version
         }
     }
