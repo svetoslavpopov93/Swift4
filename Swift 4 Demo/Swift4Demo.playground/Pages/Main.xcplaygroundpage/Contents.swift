@@ -19,8 +19,7 @@
  * [MutableCollection.swapAt](MutableCollection_swapA)
  * [Enforce Exclusive Access to Memory](EnforceExclusiveAccessToMemory)
  * [Encoding and Decoding](EncodingAndDecoding)
- * [Limiting @objc inference](LimitingObjcInference)
- * [Protocol-oriented integers](Protocol-orientedIntegers)
+
  
  
  
