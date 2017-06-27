@@ -2,6 +2,7 @@
 //:
 //: ## Generic subscripts
 //:------------
- 
+
+//:------------
 //: [< Previous](@previous)   [Next >](@next)
 
