@@ -49,24 +49,18 @@ type(of: overpricedDrinks) // overpricedDrinks is array of tuples
 
 
 //: ## Support recursive constraints on associated types [SE-0157]
-//protocol Testable {
-//    associatedtype SubSequence
-//    associatedtype Iterator : IteratorProtocol
-//    func dropFirst(_ n: Int) -> Self.SubSequence
-//}
-//
-//struct SequenceOfInts : Testable {
-//
-//    func dropFirst(_ n: Int) -> SequenceOfInts.SubSequence {
-//
-//        let sub: SimpleSubSequence<Int> = SimpleSubSequence()
-//        return sub
-//    }
-//}
-//
-//struct SimpleSubSequence<Element> : Testable {
-//
-//    typealias SubSequence = SimpleSubSequence<Element>
-//
-//}
+
+protocol MySequence {
+    associatedtype Iterator: IteratorProtocol
+    associatedtype SubSequence: Sequence
+        where Iterator.Element == SubSequence, SubSequence.SubSequence == SubSequence
+    
+    func dropFirst(_ n: Int) -> Self.SubSequence
+}
+
+
+
+
+
+
 //: [< Previous](@previous)   [Next >](@next)
