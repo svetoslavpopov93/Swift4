@@ -1,7 +1,7 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
 //: # String / Multi-line string literals
-
+/*
 [SE-0163] is the first part of the revised string model for Swift 4. The biggest change is that `String` is a `Collection` again (as it used to be in Swift 1.x), i.e. the functionality of `String.CharacterView` has been folded into the parent type. (The other views, `UnicodeScalarView`, `UTF8View`, and `UTF16View`, still exist.)
 
 Note that SE-0163 isnʼt fully implemented yet and there are likely more string-related proposals in the pipeline.
