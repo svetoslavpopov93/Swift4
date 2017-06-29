@@ -10,7 +10,6 @@
         <page name='NSNumberBridging'/>
         <page name='One-sidedRanges'/>
         <page name='StringsAndMulti-lineStringLiterals'/>
-        <page name='MutableCollection_swapA'/>
         <page name='EncodingAndDecoding'/>
     </pages>
 </playground>
