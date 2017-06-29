@@ -1,6 +1,6 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
-//: ## String / Multi-line string literals
+//: # String / Multi-line string literals
 //:------------
 
 //:------------

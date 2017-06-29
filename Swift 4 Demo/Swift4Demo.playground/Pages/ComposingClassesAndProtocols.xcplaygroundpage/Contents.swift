@@ -1,7 +1,7 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
-//: ## Composing classes and protocols
+//: # Composing classes and protocols
 //:------------
 
 //:------------
-//: [< Previous](@previous)   [Next >](@next)
+//: [< Previous](@pre⌄vious)   [Next >](@next)

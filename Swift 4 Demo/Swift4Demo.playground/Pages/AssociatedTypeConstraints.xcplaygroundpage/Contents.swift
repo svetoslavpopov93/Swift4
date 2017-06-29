@@ -9,7 +9,7 @@ import Foundation
 protocol MySequence {
     associatedtype Iterator : IteratorProtocol
     associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
-                                    // ^----- This was not allowed in the previous versions
+//                                          ^----- This was not allowed in the previous versions
 }
 
 //: ## Change 'filter' to return an associated type [SE-0174]

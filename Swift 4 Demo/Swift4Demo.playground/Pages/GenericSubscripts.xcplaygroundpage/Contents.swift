@@ -1,6 +1,6 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
-//: ## Generic subscripts
+//: # Generic subscripts
 //:------------
 
 //:------------

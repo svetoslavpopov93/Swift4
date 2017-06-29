@@ -14,12 +14,14 @@
  * [NSNumber bridging](NSNumberBridging)
  * [One-sided ranges](One-sidedRanges)
  * [Strings / Multi-line string literals](StringsAndMulti-lineStringLiterals)
- * [Private declaration visible in same-file extensions](PrivateDeclarationVisibleInSame-fileExtensions)
- * [Reduce with inout](ReduceWithInout)
  * [MutableCollection.swapAt](MutableCollection_swapA)
- * [Enforce Exclusive Access to Memory](EnforceExclusiveAccessToMemory)
  * [Encoding and Decoding](EncodingAndDecoding)
 
+ 
+ 
+ 
+ 
+ 
  
  
  

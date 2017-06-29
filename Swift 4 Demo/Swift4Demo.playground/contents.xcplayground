@@ -10,12 +10,7 @@
         <page name='NSNumberBridging'/>
         <page name='One-sidedRanges'/>
         <page name='StringsAndMulti-lineStringLiterals'/>
-        <page name='PrivateDeclarationVisibleInSame-fileExtensions'/>
-        <page name='ReduceWithInout'/>
         <page name='MutableCollection_swapA'/>
-        <page name='EnforceExclusiveAccessToMemory'/>
         <page name='EncodingAndDecoding'/>
-        <page name='LimitingObjcInference'/>
-        <page name='Protocol-orientedIntegers'/>
     </pages>
 </playground>
