@@ -67,6 +67,7 @@ extension UISlider: Shakeable {
         print("UISlider -> shake")
     }
 }
+
 func shakeEm(controls: [UIControl & Shakeable]) {
     for control in controls {
         
