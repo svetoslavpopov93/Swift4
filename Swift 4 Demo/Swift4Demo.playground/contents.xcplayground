@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='TableOfContents'/>
-        <page name='AssociatedTypeConstraints'/>
+        <page name='AssociatedTypes'/>
         <page name='ComposingClassesAndProtocols'/>
         <page name='DictionaryAndSetEnhancements'/>
         <page name='GenericSubscripts'/>
@@ -10,8 +10,8 @@
         <page name='NSNumberBridging'/>
         <page name='One-sidedRanges'/>
         <page name='StringsAndMulti-lineStringLiterals'/>
-        <page name='EncodingAndDecoding'/>
         <page name='MutableCollectionWithSwapAt'/>
+        <page name='EncodingAndDecoding'/>
         <page name='HonorableMentions'/>
     </pages>
 </playground>

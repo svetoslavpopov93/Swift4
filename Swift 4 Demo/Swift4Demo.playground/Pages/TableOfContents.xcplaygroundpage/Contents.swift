@@ -6,7 +6,7 @@
  
  
  ### Table Of Contents
- * [Associated type constraints](AssociatedTypeConstraints)
+ * [Associated types](AssociatedTypes)
  * [Composing classes and protocols](ComposingClassesAndProtocols)
  * [Dictionary and Set enhancements](DictionaryAndSetEnhancements)
  * [Generic subscripts](GenericSubscripts)
@@ -14,9 +14,8 @@
  * [NSNumber bridging](NSNumberBridging)
  * [One-sided ranges](One-sidedRanges)
  * [Strings / Multi-line string literals](StringsAndMulti-lineStringLiterals)
- * [MutableCollection.swapAt](MutableCollection_swapA)
+ * [MutableCollection.swapAt](MutableCollectionWithSwapAt)
  * [Encoding and Decoding](EncodingAndDecoding)
- * [Mutable Collection with swapAt](MutableCollectionWithSwapAt)
  * [Honorable Mentions](HonorableMentions)
 
  
