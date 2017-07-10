@@ -11,5 +11,7 @@
         <page name='One-sidedRanges'/>
         <page name='StringsAndMulti-lineStringLiterals'/>
         <page name='EncodingAndDecoding'/>
+        <page name='MutableCollectionWithSwapAt'/>
+        <page name='HonorableMentions'/>
     </pages>
 </playground>

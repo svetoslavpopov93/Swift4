@@ -16,6 +16,8 @@
  * [Strings / Multi-line string literals](StringsAndMulti-lineStringLiterals)
  * [MutableCollection.swapAt](MutableCollection_swapA)
  * [Encoding and Decoding](EncodingAndDecoding)
+ * [Mutable Collection with swapAt](MutableCollectionWithSwapAt)
+ * [Honorable Mentions](HonorableMentions)
 
  
  
