@@ -1,16 +1,23 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # Associated Type Constraints
-//: ## Permit where clauses to constrain associated types [SE-0142]
-//:------------
-//: ### In Swift 4
+/*:
+[<< Table Of Contents](TableOfContents)
+
+# Associated Type Constraints
+------------
+ [SE-0142][SE-0142]: associated types in protocols can now be constrained with `where` clauses. This seemingly small change makes the type system much more expressive and facilitates a significant simplification of the standard library. In particular, working with `Sequence` and `Collection` is a lot more intuitive in Swift 4.
+ 
+ [SE-0142]: https://github.com/apple/swift-evolution/blob/master/proposals/0142-associated-types-constraints.md "Swift Evolution Proposal SE-0142: Permit where clauses to constrain associated types"
+ 
+## Permit where clauses to constrain associated types
+
+### In Swift 4
+*/
 import Foundation
 
-protocol MySequence {
-    associatedtype Iterator : IteratorProtocol
-    associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
-//                                          ^----- This was not allowed in the previous versions
-}
+//protocol MySequence {
+//    associatedtype Iterator : IteratorProtocol
+//    associatedtype SubSequence : Sequence where SubSequence.Iterator.Element == Iterator.Element
+////                                          ^----- This was not allowed in the previous versions
+//}
 
 //: ## Change 'filter' to return an associated type [SE-0174]
 //: ### In Swift 3:

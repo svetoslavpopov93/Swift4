@@ -1,8 +1,14 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # Smart Key Paths
-//:------------
-//: ### Declaring the objects
+/*:
+[<< Table Of Contents](TableOfContents)
+
+# Smart Key Paths
+------------
+Probably one of the headline features of Swift 4 is the new key paths model described in [SE-0161][SE-0161]. Unlike the string-based key paths in Cocoa, Swift key paths are strongly typed.
+
+[SE-0161]: https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md "Swift Evolution Proposal SE-0161: Smart KeyPaths: Better Key-Value Coding for Swift"
+
+### Declaring the objects
+*/
 struct Address {
     var street:String
     var zip:String
