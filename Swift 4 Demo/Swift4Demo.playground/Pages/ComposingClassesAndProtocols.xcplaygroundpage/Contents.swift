@@ -44,9 +44,7 @@ class View { }
 class ViewSubclass: View, MyProtocol { }
 
 class MyClass {
-    var delegate: (View & MyProtocol)?
-}
-
+    var delegate: (View & My
 let myClass = MyClass()
 //myClass.delegate = View() // error: cannot assign value of type 'View' to type '(View & MyProtocol)?'
 myClass.delegate = ViewSubclass()
