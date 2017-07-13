@@ -1,9 +1,9 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
 //: # Generic subscripts
+//:------------
 /*
- Courtesy of [SE-0148], subscripts can now have generic arguments and/or return types.
-  https://github.com/apple/swift-evolution/blob/master/proposals/0148-generic-subscripts.md "Swift Evolution Proposal SE-0148: Generic Subscripts"
+https://github.com/apple/swift-evolution/blob/master/proposals/0148-generic-subscripts.md "Swift Evolution Proposal SE-0148: Generic Subscripts"
  */
 //:------------
 struct JSON {

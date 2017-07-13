@@ -4,9 +4,7 @@
 # Dictionary and Set Enchancements
 :------------
 ## Sequence-based initializer
-[SE-0165][SE-0165] adds several nice enhancements to `Dictionary` and `Set`
- 
-[SE-0165]: https://github.com/apple/swift-evolution/blob/master/proposals/0165-dict.md "Swift Evolution Proposal SE-0165: Dictionary and Set Enhancements"
+https://github.com/apple/swift-evolution/blob/master/proposals/0165-dict.md "Swift Evolution Proposal SE-0165: Dictionary and Set Enhancements"
 */
  
 import Foundation

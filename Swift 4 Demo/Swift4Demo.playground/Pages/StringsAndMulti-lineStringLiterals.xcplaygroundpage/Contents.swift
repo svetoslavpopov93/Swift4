@@ -1,10 +1,8 @@
 //: [<< Table Of Contents](TableOfContents)
 //:
 //: # String / Multi-line string literals
+//:------------
 /*
-[SE-0163] is the first part of the revised string model for Swift 4. The biggest change is that `String` is a `Collection` again (as it used to be in Swift 1.x), i.e. the functionality of `String.CharacterView` has been folded into the parent type. (The other views, `UnicodeScalarView`, `UTF8View`, and `UTF16View`, still exist.)
-
-Note that SE-0163 isnʼt fully implemented yet and there are likely more string-related proposals in the pipeline.
 https://github.com/apple/swift-evolution/blob/master/proposals/0163-string-revision-1.md "Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding"
 */
 //:------------
@@ -17,8 +15,6 @@ for char in greeting {
 
 /*:
  ### `Substring` is the new type for string slices
- 
- String slices are now instances of type `Substring`. Both `String` and `Substring` conform to `StringProtocol`. Almost the entire string API will live in `StringProtocol` so that `String` and `Substring` behave largely the same.
  */
 let comma = greeting.index(of: ",")!
 let substring = greeting[..<comma]
@@ -39,10 +35,7 @@ print(substring.uppercased())
 
 /*:
  ### `Character.unicodeScalars` property
- 
- You can now access the code points of a `Character` directly without having to convert it to a `String` first ([SE-0178][SE-0178]):
- 
- [SE-0178]: https://github.com/apple/swift-evolution/blob/master/proposals/0178-character-unicode-view.md "Swift Evolution Proposal SE-0178: Add `unicodeScalars` property to `Character`"
+ https://github.com/apple/swift-evolution/blob/master/proposals/0178-character-unicode-view.md "Swift Evolution Proposal SE-0178: Add `unicodeScalars` property to `Character`"
  */
 let c: Character = "🇪🇺"
 Array(c.unicodeScalars)
