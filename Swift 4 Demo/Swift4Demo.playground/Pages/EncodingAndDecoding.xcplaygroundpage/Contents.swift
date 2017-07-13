@@ -17,14 +17,14 @@ import Foundation
 let json = """
 [
     {
-        "name": "Banana",
-        "points": 200,
+        "product_name": "Bananas",
+        "product_cost": 200,
         "description": "A banana grown in Ecuador."
     },
     {
-        "name": "Orange",
-        "points": 100,
-        "description": "An orange."
+        "product_name": "Oranges",
+        "product_cost": 100,
+        "description": "A juicy orange."
     }
 ]
 """.data(using: .utf8)!
@@ -56,23 +56,31 @@ let groceries = [GroceryProduct(name: "Grapes", points: 230, description: "A mix
 
 var encoder = JSONEncoder()
 
-//// Properties offered by JSONEncoder to customize output
+// Properties offered by JSONEncoder to customize output
 encoder.dataEncodingStrategy
-encoder.dateEncodingStrategy
 encoder.nonConformingFloatEncodingStrategy
 encoder.outputFormatting
 encoder.userInfo
 
-let jsonData = try encoder.encode(groceries)
-String(data: jsonData, encoding: .utf8)
+let encoded = try encoder.encode(groceries)
+String(data: encoded, encoding: .utf8)
 
-/*:
- ### Decoding
- */
+///*:
+// ### Decoding
+// */
+
 let decoder = JSONDecoder()
-let decoded = try decoder.decode([GroceryProduct].self, from: jsonData)
-for product in decoded {
+let products = try decoder.decode([GroceryProduct].self, from: json)
+
+for product in products {
     print("\t\(product.name) (\(product.points) points): \(product.description)")
 }
+
+let encodedProducts = try decoder.decode([GroceryProduct].self, from: encoded)
+
+for product in encodedProducts {
+    print("\t\(product.name) (\(product.points) points): \(product.description)")
+}
+
 //:------------
 //: [< Previous](@previous)   [Next >](@next)
