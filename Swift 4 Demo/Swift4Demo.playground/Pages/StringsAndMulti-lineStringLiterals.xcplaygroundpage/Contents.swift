@@ -1,11 +1,14 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # String / Multi-line string literals
-//:------------
-/*
-https://github.com/apple/swift-evolution/blob/master/proposals/0163-string-revision-1.md "Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding"
-*/
-//:------------
+/*: [<< Table Of Contents](TableOfContents)
+
+# String / Multi-line string literals
+------------
+
+[Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding]: https://github.com/apple/swift-evolution/blob/master/proposals/0163-string-revision-1.md
+
+ [Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding]
+ 
+------------
+ */
 let greeting = "Hello, 😜!"
 // No need to drill down to .characters
 greeting.count

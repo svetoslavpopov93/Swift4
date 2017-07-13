@@ -3,8 +3,11 @@
 
 # Smart Key Paths
 ------------
-https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md "Swift Evolution Proposal SE-0161: Smart KeyPaths: Better Key-Value Coding for Swift"
+[Swift Evolution Proposal SE-0161: Smart KeyPaths: Better Key-Value Coding for Swift]: https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md "View in GitHub"
 
+ [Swift Evolution Proposal SE-0161: Smart KeyPaths: Better Key-Value Coding for Swift]
+ 
+ ------------
 ### Declaring the objects
 */
 struct Address {

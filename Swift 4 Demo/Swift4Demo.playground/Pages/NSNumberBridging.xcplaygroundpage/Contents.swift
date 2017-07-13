@@ -1,11 +1,14 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # NSNumber bridging
-//:------------
-/*
-https://github.com/apple/swift-evolution/blob/master/proposals/0170-nsnumber_bridge.md "Swift Evolution Proposal SE-0170: NSNumber bridging and Numeric types"
+/*: [<< Table Of Contents](TableOfContents)
+
+# NSNumber bridging
+------------
+
+[Swift Evolution Proposal SE-0170: NSNumber bridging and Numeric types]: https://github.com/apple/swift-evolution/blob/master/proposals/0170-nsnumber_bridge.md "View in GitHub"
+ 
+ [Swift Evolution Proposal SE-0170: NSNumber bridging and Numeric types]
+
+------------
 */
-//:------------
 import Foundation
 
 let n = NSNumber(value: UInt32(543))

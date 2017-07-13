@@ -3,7 +3,11 @@
 
 # One-sided ranges
 ------------
-https://github.com/apple/swift-evolution/blob/master/proposals/0172-one-sided-ranges.md "Swift Evolution Proposal SE-0172: One-sided Ranges"
+[Swift Evolution Proposal SE-0172: One-sided Ranges]: https://github.com/apple/swift-evolution/blob/master/proposals/0172-one-sided-ranges.md "View in GitHub"
+
+ [Swift Evolution Proposal SE-0172: One-sided Ranges]
+ 
+ ------------
 */
 let names = ["John", "Michael", "Travis", "Peter", "Joshua", "Fred"]
 let n = 2

@@ -1,16 +1,19 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # Composing classes and protocols
-//:------------
-/*
-https://github.com/apple/swift-evolution/blob/master/proposals/0156-subclass-existentials.md "Swift Evolution Proposal SE-0156: Class and Subtype existentials"
+/*: [<< Table Of Contents](TableOfContents)
+
+# Composing classes and protocols
+------------
+
+ 
+[Swift Evolution Proposal SE-0156: Class and Subtype existentials]: https://github.com/apple/swift-evolution/blob/master/proposals/0156-subclass-existentials.md/ "View in GitHub"
+[Swift Evolution Proposal SE-0156: Class and Subtype existentials]
+
+ ------------
 */
 import Foundation
 import UIKit
 
 
 protocol HeaderView {
-    
     
 }
 

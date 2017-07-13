@@ -1,11 +1,14 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # Encoding and Decoding
-//:------------
-/*
-https://github.com/apple/swift-evolution/blob/master/proposals/0166-swift-archival-serialization.md "Swift Evolution Proposal SE-0166: Swift Archival & Serialization"
+/*: [<< Table Of Contents](TableOfContents)
+
+# Encoding and Decoding
+------------
+
+[Swift Evolution Proposal SE-0166: Swift Archival & Serialization]: https://github.com/apple/swift-evolution/blob/master/proposals/0166-swift-archival-serialization.md "View in GitHub"
+ 
+[Swift Evolution Proposal SE-0166: Swift Archival & Serialization]
+ 
+------------
 */
-//:------------
 
 import Foundation
 

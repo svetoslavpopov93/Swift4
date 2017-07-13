@@ -3,8 +3,11 @@
 
 # Associated Type Constraints
 ------------
-https://github.com/apple/swift-evolution/blob/master/proposals/0142-associated-types-constraints.md "Swift Evolution Proposal SE-0142: Permit where clauses to constrain associated types"
+ [Swift Evolution Proposal SE-0142: Permit where clauses to constrain associated types]: https://github.com/apple/swift-evolution/blob/master/proposals/0142-associated-types-constraints.md "View in GitHub"
  
+ [Swift Evolution Proposal SE-0142: Permit where clauses to constrain associated types]
+ 
+ ------------
 ## Permit where clauses to constrain associated types
 
 ### In Swift 4

@@ -1,11 +1,13 @@
-//: [<< Table Of Contents](TableOfContents)
-//:
-//: # Generic subscripts
-//:------------
-/*
-https://github.com/apple/swift-evolution/blob/master/proposals/0148-generic-subscripts.md "Swift Evolution Proposal SE-0148: Generic Subscripts"
- */
-//:------------
+/*: [<< Table Of Contents](TableOfContents)
+
+ # Generic subscripts
+------------
+ 
+[Swift Evolution Proposal SE-0148: Generic Subscripts]: https://github.com/apple/swift-evolution/blob/master/proposals/0148-generic-subscripts.md "View in GitHub"
+ [Swift Evolution Proposal SE-0148: Generic Subscripts]
+
+------------
+*/
 struct JSON {
     fileprivate var storage: [String:Any]
     
