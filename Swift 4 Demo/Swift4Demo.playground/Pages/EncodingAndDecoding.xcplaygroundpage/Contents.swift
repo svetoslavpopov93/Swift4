@@ -11,20 +11,38 @@ In many cases adding the `Codable` conformance will be all you have to do for yo
 */
 //:------------
 // Make a custom type archivable by conforming it (and all its members) to Codable
-struct Card: Codable {
-    enum Suit: String, Codable {
-        case clubs, spades, hearts, diamonds
+
+import Foundation
+
+let json = """
+[
+    {
+        "name": "Banana",
+        "points": 200,
+        "description": "A banana grown in Ecuador."
+    },
+    {
+        "name": "Orange",
+        "points": 100,
+        "description": "An orange."
     }
+]
+""".data(using: .utf8)!
+
+struct GroceryProduct: Codable {
+    var name: String
+    var points: Int
+    var description: String
     
-    enum Rank: Int, Codable {
-        case ace = 1, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king
+    private enum CodingKeys: String, CodingKey {
+        case name = "product_name"
+        case points = "product_cost"
+        case description
     }
-    
-    var suit: Suit
-    var rank: Rank
 }
 
-let hand = [Card(suit: .clubs, rank: .ace), Card(suit: .hearts, rank: .queen)]
+let groceries = [GroceryProduct(name: "Grapes", points: 230, description: "A mixture of red and green grapes."), GroceryProduct(name: "Lemons", points: 2300, description: "An extra sour lemon.")]
+
 /*:
  ### Encoding
  
@@ -34,25 +52,27 @@ let hand = [Card(suit: .clubs, rank: .ace), Card(suit: .hearts, rank: .queen)]
  
  [SE-0167]: https://github.com/apple/swift-evolution/blob/master/proposals/0167-swift-encoders.md "Swift Evolution Proposal SE-0167: Swift Encoders"
  */
-import Foundation
+
 
 var encoder = JSONEncoder()
 
-// Properties offered by JSONEncoder to customize output
+//// Properties offered by JSONEncoder to customize output
 encoder.dataEncodingStrategy
 encoder.dateEncodingStrategy
 encoder.nonConformingFloatEncodingStrategy
 encoder.outputFormatting
 encoder.userInfo
 
-let jsonData = try encoder.encode(hand)
+let jsonData = try encoder.encode(groceries)
 String(data: jsonData, encoding: .utf8)
 
 /*:
  ### Decoding
  */
 let decoder = JSONDecoder()
-let decoded = try decoder.decode([Card].self, from: jsonData)
-
+let decoded = try decoder.decode([GroceryProduct].self, from: jsonData)
+for product in decoded {
+    print("\t\(product.name) (\(product.points) points): \(product.description)")
+}
 //:------------
 //: [< Previous](@previous)   [Next >](@next)
