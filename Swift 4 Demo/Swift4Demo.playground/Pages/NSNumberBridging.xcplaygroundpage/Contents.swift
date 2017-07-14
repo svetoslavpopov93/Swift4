@@ -14,6 +14,10 @@ import Foundation
 let n = NSNumber(value: UInt32(543))
 let v = n as? Int8
 
+
+let no = NSNumber(value: UInt32(543))
+let vo = n as? Int16
+
 let nn = NSNumber(value: Int64.max)
 if nn is Int16 {
     

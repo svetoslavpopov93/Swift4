@@ -1,13 +1,13 @@
 /*: [<< Table Of Contents](TableOfContents)
-
-# String / Multi-line string literals
-------------
-
-[Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding]: https://github.com/apple/swift-evolution/blob/master/proposals/0163-string-revision-1.md
-
+ 
+ # String / Multi-line string literals
+ ------------
+ 
+ [Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding]: https://github.com/apple/swift-evolution/blob/master/proposals/0163-string-revision-1.md
+ 
  [Swift Evolution Proposal SE-0163: String Revision: Collection Conformance, C Interop, Transcoding]
  
-------------
+ ------------
  */
 let greeting = "Hello, 😜!"
 // No need to drill down to .characters
@@ -36,6 +36,18 @@ print(substring.uppercased())
 "👱🏾\u{200D}👩🏽\u{200D}👧🏿\u{200D}👦🏻".count // family + skin tones
 "👩🏻‍🚒".count // person + skin tone + profession
 
+/*:
+ ### `Character.unicodeScalars` property
+ https://github.com/apple/swift-evolution/blob/master/proposals/0178-character-unicode-view.md "Swift Evolution Proposal SE-0178: Add `unicodeScalars` property to `Character`"
+ */
+
+let galaxy = "Milky Way 🐮"
+galaxy.count
+let filtered = galaxy.filter { char in
+    let isASCII = char.unicodeScalars.reduce(true, { $0 && $1.isASCII })
+    return isASCII
+}
+filtered.count
 //:------------
 //: [< Previous](@previous)   [Next >](@next)
 
