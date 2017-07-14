@@ -36,13 +36,6 @@ print(substring.uppercased())
 "👱🏾\u{200D}👩🏽\u{200D}👧🏿\u{200D}👦🏻".count // family + skin tones
 "👩🏻‍🚒".count // person + skin tone + profession
 
-/*:
- ### `Character.unicodeScalars` property
- https://github.com/apple/swift-evolution/blob/master/proposals/0178-character-unicode-view.md "Swift Evolution Proposal SE-0178: Add `unicodeScalars` property to `Character`"
- */
-let c: Character = "🇪🇺"
-Array(c.unicodeScalars)
-
 //:------------
 //: [< Previous](@previous)   [Next >](@next)
 

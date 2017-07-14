@@ -12,7 +12,21 @@
 import Foundation
 
 let n = NSNumber(value: UInt32(543))
-let v = n as? Int8 // nil in Swift 4. This would be 31 in Swift 3 (try it!).
+let v = n as? Int8
 
+let nn = NSNumber(value: Int64.max)
+if nn is Int16 {
+    
+    print("wow")
+}
+
+let nnn = NSNumber(value: Int64.max)
+if nnn is Int16 {
+    
+    print("Swift 3")
+} else if nnn is Int64 {
+   
+    print("Swift 4")
+}
 //:------------
 //: [< Previous](@previous)   [Next >](@next)

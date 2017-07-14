@@ -39,18 +39,6 @@ extension UIImageView: HeaderView {}
 
 ViewController(header: UIImageView()) // works
 
-//OR
-
-protocol MyProtocol { }
-class View { }
-class ViewSubclass: View, MyProtocol { }
-
-class MyClass {
-    var delegate: (View & MyProtocol)
-let myClass = MyClass()
-//myClass.delegate = View() // error: cannot assign value of type 'View' to type '(View & MyProtocol)?'
-myClass.delegate = ViewSubclass()
-
 // OR
 protocol Shakeable {
     

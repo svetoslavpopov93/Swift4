@@ -46,7 +46,6 @@ let groceries = [GroceryProduct(name: "Grapes", points: 230, description: "A mix
  https://github.com/apple/swift-evolution/blob/master/proposals/0167-swift-encoders.md "Swift Evolution Proposal SE-0167: Swift Encoders"
  */
 
-
 var encoder = JSONEncoder()
 
 // Properties offered by JSONEncoder to customize output

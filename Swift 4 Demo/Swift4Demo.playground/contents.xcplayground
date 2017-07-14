@@ -2,9 +2,9 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='TableOfContents'/>
-        <page name='DictionaryAndSetEnhancements'/>
-        <page name='ComposingClassesAndProtocols'/>
         <page name='AssociatedTypes'/>
+        <page name='ComposingClassesAndProtocols'/>
+        <page name='DictionaryAndSetEnhancements'/>
         <page name='GenericSubscripts'/>
         <page name='SmartKeyPaths'/>
         <page name='NSNumberBridging'/>
