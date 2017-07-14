@@ -40,6 +40,8 @@ print(substring.uppercased())
  ### `Character.unicodeScalars` property
  https://github.com/apple/swift-evolution/blob/master/proposals/0178-character-unicode-view.md "Swift Evolution Proposal SE-0178: Add `unicodeScalars` property to `Character`"
  */
+let c: Character = "🇪🇺"
+Array(c.unicodeScalars)
 
 let galaxy = "Milky Way 🐮"
 galaxy.count

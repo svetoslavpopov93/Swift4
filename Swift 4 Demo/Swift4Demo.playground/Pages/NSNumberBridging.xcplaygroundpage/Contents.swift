@@ -21,7 +21,7 @@ let vo = n as? Int16
 let nn = NSNumber(value: Int64.max)
 if nn is Int16 {
     
-    print("wow")
+    print("Swift 3")
 }
 
 let nnn = NSNumber(value: Int64.max)
